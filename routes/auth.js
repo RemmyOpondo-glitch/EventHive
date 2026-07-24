@@ -10,30 +10,38 @@ router.get("/login",(req,res)=>{
     res.render("login");
 });
 
-router.post("/login",(req,res)=>{
+router.post("/login", (req, res) => {
 
     const users = JSON.parse(
         fs.readFileSync("./data/users.json")
     );
 
-    const user=users.find(
-        user=>user.email ===req.body.email
+    const user = users.find(
+        user => user.email === req.body.email
     );
 
-    if(!user){
+    if (!user) {
         return res.send("Email not found.");
     }
 
-    if(user.password !== req.body.password){
+    if (user.password !== req.body.password) {
         return res.send("Incorrect password");
     }
 
-    // Save the logged-in user in the session
     req.session.user = user;
 
-    res.redirect("/dashboard")
-    
-})
+    console.log("User saved:", req.session.user);
+    console.log("Session after save:", req.session);
+
+    req.session.save((err) => {
+        if (err) {
+            console.error(err);
+            return res.send("Session save failed");
+        }
+
+        res.redirect("/dashboard");
+    });
+});
 
 //logout
 router.get("/logout",(req,res)=>{

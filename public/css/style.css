@@ -1,15 +1,136 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
     padding: 40px;
 }
 
-h1 {
-    color: #2c3e50;
+h1{
+    margin-bottom: 30px;
+    color: #333;
 }
 
-p {
-    color: #555;
+.card{
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    transition: .3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card h2{
+    margin-bottom: 15px;
+}
+
+.card p{
+    margin-bottom: 8px;
+}
+
+.actions{
+    margin-top: 20px;
+}
+
+.actions a{
+    text-decoration: none;
+    background: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.actons button{
+    padding: 10px 8px;
+    border: none;
+    border-radius: 8px;
+    background: #dc2626;
+    color: white;
+    cursor: pointer;
+}
+
+.actions a:hover{
+    background: #1d4ed8;
+}
+
+.actios button:hover{
+    background: #b91c1c;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #1e293b;
+}
+
+.logo{
+    color: white;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+form{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button{
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero{
+    background: #2563eb;
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
 }

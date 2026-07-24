@@ -3,14 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>All Events</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-    <h1>Upcoming Events</h1>
+    <nav>
+        <div class="logo">
+            EventHive
+        </div>
 
-    <p>All events will appear here.</p>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/create-event">Create Event</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+
+
+    </nav>
+
+    <div class="container">
+
+        
+    <h1>All Events</h1>
+
+    <%events.forEach((event, index)=>{%> 
+    <div class="card">
+
+        <h2><%=event.title%></h2>
+
+        <p><strong>Description: </strong><%=event.description%></p>
+
+        <p><strong>Date: </strong><%=event.date%></p>
+
+        <p><strong>Location: </strong><%=event.location%></p>
+
+        <div class="actions">
+
+        <a href="/edit-event/<%=index%>">
+
+            Edit Event
+        </a>
+
+        <form action="/delete-event/<%=index%>" method="POST">
+
+            <button type="submit">
+                Delete Event
+            </button>
+
+        </form>
+        
+        <%})%>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+      
+
+       
+
     
 </body>
 </html>

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "JavaScript Bootcamp",
+    "description": "Learn Express.js",
+    "date": "2026-07-07",
+    "location": "ol kalau"
+  },
+  {
+    "title": "Python Bootcamp",
+    "description": "Learn Data Analysis",
+    "date": "2026-07-21",
+    "location": "Mombasa"
+  },
+  {
+    "title": "Cyber Security Bootcamp",
+    "description": "Wanna protect your networks? Dont moss this",
+    "date": "2026-07-23",
+    "location": "Nairobi"
+  }
+]

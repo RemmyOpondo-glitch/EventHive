@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event</title>
+</head>
+<body>
+
+        <nav>
+        <div class="logo">
+            EventHive
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/create-event">Create Event</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+
+
+    </nav>
+
+    <h1>Edit Event</h1>
+
+    <form action="/edit-event/<%=id%>" method="POST">
+
+        <div>
+            <label>Title</label><br>
+
+            <input
+             type="text"
+             name="title"
+             value="<%=event.title%>"
+             required
+             >
+                       
+        </div>
+         <br>
+
+        <div>
+            <label>Description</label><br>
+
+             <textarea 
+             name="description"
+             rows="5"
+             required
+             ><%=event.description%></textarea>
+        </div>
+         <br>
+
+         <div>
+            <label>Date</label><br>
+            <input 
+            type="text"
+            name="date"
+            value="<%=event.date%>"
+            required
+            >
+         </div>
+         <br>
+
+         <div>
+            <label>Location</label>
+
+            <input 
+            type="text"
+            name="location"
+            value="<%=event.location%>"
+            required
+            >
+         </div>
+         <br>
+
+         <button type="submit">
+            Update Event
+         </button>
+
+
+    </form>
+    
+</body>
+</html>

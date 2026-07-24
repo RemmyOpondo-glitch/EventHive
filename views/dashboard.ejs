@@ -7,12 +7,28 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Welcome, <%=user.name%>!</h1>
 
-    <a href="/logout"><button>Logout</button></a>
+    <nav>
+        <div class="logo">
+            EventHive
+        </div>
 
-    <p>Email: <%=user.email%></p>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/create-event">Create Event</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
 
-    <p>You have successfully loged in</p>
+
+    </nav>
+
+
+    <h1>Welcome <%=user.name%>!</h1>
+
+    
+    <p>Manage your events from one place</p>
+
 </body>
 </html>
