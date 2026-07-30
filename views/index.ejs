@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EventHive</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>EventHub</title>
+
+  <link rel="stylesheet" href="/css/home.css">
+  
+
 </head>
 <body>
 
-        <nav>
-        <div class="logo">
-            EventHive
-        </div>
+<div class="nav">
+  <div class="logo">
+    <h1>EventHive</h1>
+  </div>
 
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/create-event">Create Event</a></li>
-            <li><a href="/login">Login</a></li>
-        </ul>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Resources</a></li>
+      </ul>
+  </div>
+
+  <div class="signin">
+    <button class="btn1"><a href="/login">Login</a></button>
+     <button class="btn2"><a href="/register">Sign Up</a></button>
+  </div>
+</div>
 
 
-    </nav>
+<div class="part1">
+  <div class="first">
+    <div class="intro">
+    <h2>Modern Event<br> Hub</h2>
+    <p>Discover & Host Extraordinary <br> 
+      Events</p>
+      <button class="strt"><a href="/register">Get Started</a></button>
+      </div>
 
+      <div class="img1">
+        <img src="/images/illustration-working.svg" alt="">
+      </div>
+  </div>
 
-    <h1>Welcome to EventHive</h1>
+  <div class="second">
 
-    <p>Our first EJS page is working</p>
+    <h2>Why Choose EventHive?</h2>    
+    <p>Built with simplicity and power for attendees and organizers alike.</p>
+  </div>
+  </div>
+<div class="part2">
+  <div class="third">
+    <h2>Advanced Statistics</h2>
+
+    <p>Track how your links are performing across the web with <br>
+      our advanced statistics dashboard.</p>
+  </div>
+
+  <div class="fourth">
+    <div class="card">
+      <div class="icon">
+        <img src="/images/icon-brand-recognition.svg" alt="">
+      </div>
+      <div class="cont">
+        <h2>Discover Local Gatherings</h2>
+        <p>Explore workshops, tech conferences, community meetups, and celebrations happening near you.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="/images/icon-brand-recognition.svg" alt="">
+      </div>
+      <div class="cont">
+        <h2>Effortless Management</h2>
+        <p>Publish events, set locations, update schedules, and keep your guests informed with clean controls.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="/images/icon-brand-recognition.svg" alt="">
+      </div>
+      <div class="cont">
+        <h2>Community Connections</h2>
+        <p>Connect with attendees, manage registrations, and expand your audience effortlessly.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="fifth">
+    <h2>Track your events today</h2>
+    <button class="strt"><a href="/register">Get Started</a></button>
+  </div>
+
+  <%- include('partials/footer') %>
+
 </body>
 </html>

@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 7rem;
+    gap: 50px;
+    align-items: center;
+}
+
+.logo{
+    color: hsl(180, 66%, 49%);;
+    font-size: 30px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.menu ul li a{
+    color:hsl(257, 7%, 63%) ;
+    text-decoration: none;
+}
+
+.signin{
+    margin-left: 25rem;
+}
+
+.btn1{
+    border: none;
+    padding: 12px 12px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn1 a{
+    color:hsl(257, 7%, 63%);
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.btn2{
+    background: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 6rem;
+}
+
+.btn2 a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7rem;
+    margin-top: 3rem;
+    gap: 6rem;
+}
+
+.intro h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.intro p{
+    font-size: 20px;
+    color:hsl(257, 7%, 63%) ;
+
+}
+
+.strt{
+    background: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 8rem;
+    margin-top: 2rem;
+}
+
+.strt a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.img1{
+    width: 50%;
+}
+
+.img1 img{
+    width: 70%;
+}
+
+.second{
+    background: url("/images/bg-shorten-desktop.svg");
+    margin-left: 7rem;
+    margin-top: 2rem;
+    width: 70%;
+    height: 20vh;
+    background-color:hsl(260, 8%, 14%) ;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: 4rem;
+    line-height: 1.5;
+}
+
+.second h2{
+    color: white;
+    font-size: 25px;
+}
+
+.second p{
+    color: white;
+    font-size: 20px;
+}
+
+.link{
+    width: 70%;
+    height: 6vh;
+    margin-left: 2rem;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.btn3{
+    background: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 8rem;
+}
+
+.btn3 a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+.part2{
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    
+}
+.third{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.third h2{
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+
+.third p{
+    font-size: 18px;
+    color:hsl(257, 7%, 63%); 
+}
+
+.fourth{
+    display: flex;
+    flex-direction: row;
+    
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.card{
+    width: 23%;
+    padding: 60px 30px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    background: white;
+
+}
+
+.card h2{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.card p{
+    font-size: 17px;
+    color: hsl(257, 7%, 63%);
+    line-height: 1.4;
+}
+
+.fifth{
+    background: url("/images/bg-boost-desktop.svg");
+    width: 100%;
+    height: 23vh;
+    background-color:hsl(260, 8%, 14%) ;
+    text-align: center;
+}
+
+.fifth h2{
+    color: #f5f5f5;
+    padding-top: 17px;
+    font-size: 30px;
+    
+}
+
+.fifth button{
+    margin-top: -0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+input{
+    width: 40%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+

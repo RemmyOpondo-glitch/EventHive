@@ -10,6 +10,7 @@ const indexRoutes=require("./routes/index");
 const authRoutes=require("./routes/auth");
 const eventsRoutes=require("./routes/events");
 const dashboardRoutes=require("./routes/dashboard");
+const footerRoutes= require("./routes/partials")
 
 
 app.set("view engine", "ejs");
@@ -31,6 +32,7 @@ app.use("/",indexRoutes);
 app.use("/",authRoutes);
 app.use("/",eventsRoutes);
 app.use("/",dashboardRoutes);
+app.use("/",footerRoutes);
 
 
 app.listen(port,()=>{

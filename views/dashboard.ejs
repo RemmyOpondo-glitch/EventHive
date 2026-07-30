@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
 </head>
 <body>
 
@@ -28,7 +29,48 @@
     <h1>Welcome <%=user.name%>!</h1>
 
     
-    <p>Manage your events from one place</p>
+    <p>Here is your event management overview and account statistics.</p>
+
+    <div class="first">
+    <div class="card">
+      <div class="icon">
+        <img src="/images/icon-brand-recognition.svg" alt="">
+      </div>
+      <div class="cont">
+        <h2>Account Role</h2>
+        <p>Event Organizer</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="/images/icon-brand-recognition.svg" alt="">
+      </div>
+      <div class="cont">
+        <h2>Session Status</h2>
+        <p>Active & Secure</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="/images/icon-brand-recognition.svg" alt="">
+      </div>
+      <div class="cont">
+        <h2>Community</h2>
+        <p>EventHive Hub</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="second">
+    <h2>Quick Management</h2>
+    <p>Manage your published events or host new sessions across the platform.</p>
+    <button class="btn"><a href="/events">View All Events</a></button>
+    <button class="btn"><a href="/create-event">Add New Event</a></button>
+  </div>
+
+<%- include('partials/footer') %>
 
 </body>
 </html>

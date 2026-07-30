@@ -1,0 +1,67 @@
+.first{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 4rem 4rem;
+}
+
+.card{
+    width: 23%;
+    padding: 40px 30px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    background: white;
+
+}
+
+.card h2{
+    font-size: 19px;
+    padding: 10px;
+    color: hsl(257, 7%, 63%);
+}
+
+.card p{
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+.second{
+    width: 70%;
+    padding: 40px 30px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    background: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    
+
+}
+
+.second h2{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.second p{
+    font-size: 20px;
+    line-height: 1.4;
+    color: hsl(257, 7%, 63%);
+}
+
+.btn{
+    background: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 8rem;
+    margin-top: 2rem;
+}
+
+.btn a{
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+
+}

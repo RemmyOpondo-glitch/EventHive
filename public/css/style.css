@@ -7,7 +7,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #f5f5f5;
-    padding: 40px;
+    
 }
 
 h1{
@@ -69,8 +69,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background: #1e293b;
+    padding: 40px;
+    background: hsl(180, 66%, 49%);
 }
 
 .logo{
