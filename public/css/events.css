@@ -1,0 +1,115 @@
+.events-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.event-card{
+    width: 340px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    transition:transform .3s ease,
+               box-shadow .3s ease;
+}
+
+.event-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.card-header{
+    background: #eef2ff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h2{
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.status{
+    background: white;
+    color: #4f46e5;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.card-body{
+    padding: 25px;
+}
+
+.card-body p{
+    margin-bottom: 18px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.card-body strong{
+    color: #111827;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.card-footer form{
+    margin: 0;
+    width: 48%;
+}
+
+.edit-btn,
+.detele-btn{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 3s;
+    box-sizing: border-box;
+}
+
+.edit-btn{
+    border: 1px solid #d1d5db;
+    color: #374151;
+    background: white;
+}
+
+.edit-btn:hover{
+    background:#f3f4f6 ;
+}
+
+.detele-btn{
+    border: 1px solid #ef4444;
+    color: #ef4444;
+    background: white;
+}
+
+.detele-btn:hover{
+    background: #ef4444;
+    color: white;
+}
+

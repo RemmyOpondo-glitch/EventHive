@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Events</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/events.css">
 </head>
 <body>
 
@@ -24,45 +24,42 @@
 
     </nav>
 
+
     <div class="container">
+        <h1>All Events</h1>
 
-        
-    <h1>All Events</h1>
+        <div class="events-container">
+            <%events.forEach((event,index)=>{%>
+                <div class="event-card">
+                    <!-- Header -->
+                     <div class="card-header">
+                        <h2><%=event.title%></h2>
+                        <span class="status">UPCOMING</span>
+                     </div>
 
-    <%events.forEach((event, index)=>{%> 
-    <div class="card">
+                     <!-- Body -->
+                      <div class="card-body">
+                        <p><strong>Date:</strong><%=event.date%></p>
+                        <p><strong>Location:</strong><%=event.location%></p>
+                        <p class="description"><%=event.description%></p>
+                      </div>
 
-        <h2><%=event.title%></h2>
+                      <!-- Footer -->
+                       <div class="card-footer">
+                        <a href="/edit-event/<%=index%>" class="edit-btn">Edit</a>
 
-        <p><strong>Description: </strong><%=event.description%></p>
+                        <form action="/delete-event/<%=index%>" method="POST">
+                            <button type="submit" class="detele-btn">Delete</button>
+                        </form>
+                       </div>
 
-        <p><strong>Date: </strong><%=event.date%></p>
-
-        <p><strong>Location: </strong><%=event.location%></p>
-
-        <div class="actions">
-
-        <a href="/edit-event/<%=index%>">
-
-            Edit Event
-        </a>
-
-        <form action="/delete-event/<%=index%>" method="POST">
-
-            <button type="submit">
-                Delete Event
-            </button>
-
-        </form>
-        
-        <%})%>
-
+                      
+                </div>
+                <%})%>
         </div>
-
     </div>
 
 
-    </div>
 
     <%- include('partials/footer') %>
        
